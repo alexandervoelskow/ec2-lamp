@@ -1,0 +1,13 @@
+---
+# tasks file for apache
+- name: Esure that the httpd package is not installed
+  yum:
+    name: httpd
+    state: absent
+- name: Ensure that the httpd-tools package is not installed
+  yum:
+    name: httpd-tools
+    state: absent
+    
+ 
+
